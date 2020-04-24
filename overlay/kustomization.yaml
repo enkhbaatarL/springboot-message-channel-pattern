@@ -1,0 +1,9 @@
+bases:
+  - ../../../deploy-config/base
+configMapGenerator:
+  - name: springboot-message-channel-pattern-config
+    behavior: merge
+    files:
+      # overlay에서는 이 property 파일을 수정하여
+      # base에 설정된 값을 overwrite 할 수 있다.
+      - patch.yaml

@@ -1,0 +1,18 @@
+# 개발자 설정 영역
+server:
+  port: 8081
+
+domain:
+  name: message
+  group: pattern
+
+spring:
+  application:
+    name: springboot-message-channel-pattern
+  profiles:
+    active: dev
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: labs
+    password: awesome-rabbitmq
